@@ -3,6 +3,7 @@ package com.example.demo.controller.dto;
 public class UserReqDto {
 
 	private String username;
+	
 	private String password;
 	
 	public String getUsername() {

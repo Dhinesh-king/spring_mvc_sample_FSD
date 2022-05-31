@@ -2,6 +2,7 @@ package com.example.demo.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
@@ -38,4 +39,10 @@ public class HomeController {
 		return "loginform";
 	}
 	
+	@GetMapping("/sample")
+	public String getSample(Model model,ModelMap modelMap) {
+		model.addAttribute("name","Rajesh");
+		modelMap.addAttribute("name1","Ganesh");
+		return "sample";
+	}
 }

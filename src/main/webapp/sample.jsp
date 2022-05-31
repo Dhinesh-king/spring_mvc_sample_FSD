@@ -10,12 +10,8 @@
 <title>Welcome Page</title>
 </head>
 <body>
-	<div class="container text-center text-sm">
-		<h2>Welcome ,${emp.name}</h2>
-		<h1>Your Id is ${emp.id}</h1>
-		<hr />
-		${name}
-		<a class="btn btn-danger" href="#">Logout</a>
-	</div>
+	Hi, Welcome ${name} using Model
+	<p>
+	Hi Welcome ${name1} using ModelMap
 </body>
 </html>
